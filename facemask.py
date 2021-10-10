@@ -73,7 +73,7 @@ test_image=image.img_to_array(test_image)
 test_image=np.expand_dims(test_image,axis=0)
 print(mymodel.predict_classes(test_image)[0][0])
 '''
-
+mymodel=load_model('mymodel.h5')
 cap=cv2.VideoCapture(0)
 face_cascade=cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
